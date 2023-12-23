@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Udinus FEB</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+    <link rel="shortcut icon" type="image/png" href="assets/images/fav.png"/>
+    <!--build:css assets/css/styles.min.css-->
+    <link rel="stylesheet" href="assets/css/bootstrap.css"/>
+    <link rel="stylesheet" href="assets/css/slick.min.css"/>
+    <link rel="stylesheet" href="assets/css/bootstrap-drawer.min.css"/>
+    <link rel="stylesheet" href="assets/icons/style.css"/>
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <link rel="stylesheet" href="assets/css/animate-4.1.1.min.css"/>
+	
+	<link href="assets/css/leaflet.css" rel="stylesheet">
+    <!--endbuild-->
+  </head>
+  <body>
+    <div id="header">
+      <div class="style-home-six">
+        <div class="top-nav style-one bg-dark" style="background-color: #114d91!important">
+          <div class="container flex-between h-44">
+            <div class="left-block flex-item-center">
+              <div class="location flex-item-center"><i class="ph-light ph-map-pin text-white fs-20"></i><span class="ml-8 caption1 text-white">Jl. Imam Bonjol No. 207, Semarang Tengah, Kota Semarang</span></div>
+              <div class="mail ml-28 flex-item-center"><i class="ph-light ph-phone text-white fs-20"></i><span class="ml-8 caption1 text-white">+6224 3517261</span></div>
+            </div>
+            <marquee style="color: white; width: 40%;">
+            Selamat Datang di Fakultas Ekonomi Bisnis Udinus Kota Semarang
+          </marquee>
+          </div>
+        </div>
+      </div>
+      <div class="style-subpage style-home-six">
+        <div class="header-menu style-six">
+        </div>
+      </div>
+    </div>
+    <div id="content">
+      <div class="slider-block style-six bg-on-surface">
+        <div class="slider-main"> 
+          <div class="slider-item"> 
+            <div class="bg-img"> <img class="w-100 h-100 animate__animated animate__fadeIn animate__delay-0-2s" src="assets/images/background.jpg" alt=""/></div>
+            <div class="container"> 
+              <div class="text-content flex-columns-between"> 
+                <div class="heading2 text-white animate__animated animate__fadeInUp animate__delay-0-2s"><small>Selamat Datang </small><br>Fakultas Ekonomi Bisnis <br>Universitas Dian Nuswantoro <br>Kota Semarang</div>
+                <div class="button-block mt-40 animate__animated animate__fadeInUp animate__delay-0-8s"><a class="button-share display-inline-block bg-orange border-transparent hover-bg-white hover-text-orange text-white text-button pl-36 pr-36 pt-14 pb-14 bora-100" href="#maps">Mulai Sekarang</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+		<!-- <div class="partner-five-col style-one mt-100 bg-blue" style="margin-top: -100px;">
+		  <div class="list pt-32 pb-32">
+			<div class="bg-img flex-center"><img class="w-100" src="assets/images/partner/140x32.png" alt=""/></div>
+			<div class="bg-img flex-center"><img class="w-100" src="assets/images/partner/140x32.png" alt=""/></div>
+			<div class="bg-img flex-center"><img class="w-100" src="assets/images/partner/140x32.png" alt=""/></div>
+			<div class="bg-img flex-center"><img class="w-100" src="assets/images/partner/140x32.png" alt=""/></div>
+			<div class="bg-img flex-center"><img class="w-100" src="assets/images/partner/140x32.png" alt=""/></div>
+			<div class="bg-img flex-center"><img class="w-100" src="assets/images/partner/140x32.png" alt=""/></div>
+			<div class="bg-img flex-center"><img class="w-100" src="assets/images/partner/140x32.png" alt=""/></div>
+			<div class="bg-img flex-center"><img class="w-100" src="assets/images/partner/140x32.png" alt=""/></div>
+			<div class="bg-img flex-center"><img class="w-100" src="assets/images/partner/140x32.png" alt=""/></div>
+			<div class="bg-img flex-center"><img class="w-100" src="assets/images/partner/140x32.png" alt=""/></div>
+			<div class="bg-img flex-center"><img class="w-100" src="assets/images/partner/140x32.png" alt=""/></div>
+			<div class="bg-img flex-center"><img class="w-100" src="assets/images/partner/140x32.png" alt=""/></div>
+		  </div>
+		</div> -->
+    
+        <div class="video-about-block pt-100 bg-on-surface" style='background-image: url("assets/images/picture491.jpg");'>
+          <div class="container flex-columns-center"> 
+			<div class="heading3 text-white" style="margin-bottom: 60px;">Pilih Rute Menuju FEB Udinus</div>
+
+            <div class="bg-img w-100 p-36 bora-24" id="maps">
+				<!-- <i class="ph-fill ph-play text-critical fs-28 bg-white p-28 bora-50"></i> -->
+				
+				<div id="mapid" style="height: 600px; width: 100%;">
+				</div>
+
+			</div>
+            <div class="row mt-40 flex-columns-center">
+              <div class="mt-40 col-12">
+                <div class="row row-gap-32">
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+		<div class="js-video-modal open" id="myModal" style="display: none;">
+			<div class="js-video-modal-container">
+			<div class="video-block">
+				
+				<video id="videoTexture" controls autoplay style="width: 100%;">
+					<source src="" type="video/mp4">
+					<!-- <source src="assets/video/balaikota.ogg" type="video/ogg"> -->
+					Your browser does not support HTML5 video.
+				</video>
+
+				<button id="close" class="button-share display-inline-block bg-orange border-transparent hover-bg-white hover-text-orange text-white text-button pl-36 pr-36 pt-14 pb-14 bora-100">Kembali</button>
+
+			</div>
+			</div>
+		</div>
+		
+    </div>
+
+
+    <!--build:js assets/js/main.min.js-->
+    <script src="./assets/js/jquery-3.7.0.js"></script>
+    <script src="./assets/js/jquery-migrate-3.4.1.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
+    <script src="./assets/js/waypoints.min.js"></script>
+    <script src="./assets/js/countUp.min.js"></script>
+    <script src="./assets/js/phosphor-icon.js"></script>
+    <script src="./assets/js/scrollreveal-4.0.0.min.js"></script>
+    <script src="./assets/js/bootstrap-drawer.min.js"></script>
+    <script src="./assets/js/drawer.min.js"></script>
+    <!-- <script src="./assets/js/main.min.js"></script> -->
+	
+	<script src="assets/js/leaflet.js"></script>
+	<script src="assets/js/leaflet.ajax.js"></script>
+		
+	
+    <script>
+        var map = L.map('mapid').setView([-6.978907015212759, 110.37372065694473], 13);
+        
+        // L.marker([{{ $lat.','.$lng }}]).addTo(map).bindPopup('{{ $title }}');
+        
+        var basemap = L.tileLayer('https://{s}.tile.osm.org/{z}/{x}/{y}.png');
+        basemap.addTo(map);
+
+		var balaikotaIcon = L.icon({
+			iconUrl: 'assets/images/balaikota.png',
+
+			iconSize:     [80, 80], // size of the icon
+			iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
+			popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+		});
+
+		L.marker([-6.981906839539192, 110.41291962011664], {icon: balaikotaIcon}).addTo(map).on('click', function(e) {
+			playVid('assets/video/balaikota.mp4');
+		});
+
+		var bandaraIcon = L.icon({
+			iconUrl: 'assets/images/bandara.png',
+
+			iconSize:     [80, 80], // size of the icon
+			iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
+			popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+		});
+
+		L.marker([-6.967517435337984, 110.37474323669416], {icon: bandaraIcon}).addTo(map).on('click', function(e) {
+			playVid('assets/video/bandara.mp4');
+		});
+
+		var gubernurIcon = L.icon({
+			iconUrl: 'assets/images/gubernur.png',
+
+			iconSize:     [80, 80], // size of the icon
+			iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
+			popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+		});
+
+		L.marker([-6.993593478368984, 110.42049893721405], {icon: gubernurIcon}).addTo(map).on('click', function(e) {
+			playVid('assets/video/gubernur.mp4');
+		});
+
+		var diktiIcon = L.icon({
+			iconUrl: 'assets/images/dikti.png',
+
+			iconSize:     [80, 80], // size of the icon
+			iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
+			popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+		});
+
+		L.marker([-7.0168673396804975, 110.3985814459697], {icon: diktiIcon}).addTo(map).on('click', function(e) {
+			playVid('assets/video/lldikti.mp4');
+		});
+
+		var mangkangIcon = L.icon({
+			iconUrl: 'assets/images/mangkang.png',
+
+			iconSize:     [80, 80], // size of the icon
+			iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
+			popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+		});
+
+		L.marker([-6.968797875021824, 110.28938200532976], {icon: mangkangIcon}).addTo(map).on('click', function(e) {
+			playVid('assets/video/mangkang.mp4');
+		});
+
+		var pelabuhanIcon = L.icon({
+			iconUrl: 'assets/images/pelabuhan.png',
+
+			iconSize:     [80, 80], // size of the icon
+			iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
+			popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+		});
+
+		L.marker([-6.947038704398177, 110.42401424806398], {icon: pelabuhanIcon}).addTo(map).on('click', function(e) {
+			playVid('assets/video/pelabuhan.mp4');
+		});
+
+		var tawangIcon = L.icon({
+			iconUrl: 'assets/images/tawang.png',
+
+			iconSize:     [80, 80], // size of the icon
+			iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
+			popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+		});
+
+		L.marker([-6.964240635416597, 110.42825556204532], {icon: tawangIcon}).addTo(map).on('click', function(e) {
+			playVid('assets/video/tawang.mp4');
+		});
+
+		var poncolIcon = L.icon({
+			iconUrl: 'assets/images/poncol.png',
+
+			iconSize:     [80, 80], // size of the icon
+			iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
+			popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+		});
+
+		L.marker([-6.968906875829393, 110.41390297575597], {icon: poncolIcon}).addTo(map).on('click', function(e) {
+			playVid('assets/video/poncol.mp4');
+		});
+
+    </script>
+	
+	<script>
+
+		function playVid(url) {
+			
+			$('#myModal').show();
+			$("#myModal").addClass("open");
+			$("#myModal").removeClass("close");
+			
+			var vid = document.getElementById("videoTexture");
+			vid.onended = function() {
+  				$('#myModal').hide();
+				$("#myModal").addClass("close");
+				$("#myModal").removeClass("open");
+			};
+			vid.src = url;
+			vid.play();
+			
+  			$('#myModal').show();
+
+			$("#close").click(function(){
+  				$('#myModal').hide();
+				$("#myModal").addClass("close");
+				$("#myModal").removeClass("open");
+					
+				var vid = document.getElementById("videoTexture");
+				vid.src = null;
+				vid.pause();
+				
+			});
+
+		}
+
+		$('#myModal').on('hide', function () {
+			var vid = document.getElementById("videoTexture");
+			vid.src = null;
+			vid.pause();
+		});
+
+	</script>
+
+
+    <!--endbuild-->
+  </body>
+</html>
